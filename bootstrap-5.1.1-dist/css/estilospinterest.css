@@ -1,0 +1,70 @@
+#boton-icono {
+  border-radius: 100%;
+  margin: 0;
+  padding: 0;
+}
+#boton-icono:hover {
+  background-color: rgb(180, 178, 178);
+  cursor: hand;
+}
+div.gallery {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.botonvolador {
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+.botonvolador button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+main {
+  padding-top: 6rem;
+}
+#navigation {
+  position: fixed;
+  width: 100%;
+}

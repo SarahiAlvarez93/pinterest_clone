@@ -1,0 +1,107 @@
+/*GRID GALLERY*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 3rem;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #03afff;
+  border-radius: 20px;
+  filter: contrast(100%);
+  transition: filter 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid-item:hover {
+  filter: contrast(50%);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+@media (min-width: 600px) {
+  .wide {
+    grid-column: span 2;
+  }
+
+  .tall {
+    grid-row: span 2;
+  }
+}
+#boton-icono {
+  border-radius: 100%;
+  margin: 0;
+  padding: 0;
+}
+#boton-icono:hover {
+  background-color: rgb(180, 178, 178);
+  cursor: hand;
+}
+#boton-inicio {
+  background-color: black;
+  border-radius: 100px;
+}
+#boton-inicio,
+#boton-hoy {
+  font-weight: 900;
+  border-radius: 100px;
+}
+#boton-hoy:hover {
+  background-color: rgb(180, 178, 178);
+  cursor: hand;
+}
+.form-control {
+  border-radius: 1.5rem;
+  background: rgb(245, 244, 244);
+}
+input {
+  display: block;
+  outline: 0;
+}
+
+.botonvolador {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 4px;
+}
+.botonvolador button {
+  background: rgb(250, 248, 248);
+  box-shadow: 0 2px 20px 0 var(--main-color);
+  padding: 15px;
+  border-radius: 100%;
+  margin: 1rem;
+}
+#boton-mas {
+  display: block;
+}
+
+#boton-mas:hover {
+  background-color: rgb(233, 231, 231);
+  cursor: hand;
+}
+
+main {
+  padding-top: 2rem;
+}
+#navigation {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
